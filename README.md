@@ -4,6 +4,20 @@
 3. SG 90 servo: https://www.amazon.in/Robodo-Electronics-Tower-Micro-Servo/dp/B00MTFFAE0
 4. PCA9685 Servo Driver: https://www.amazon.in/Robodo-Electronics-Tower-Micro-Servo/dp/B00MTFFAE0
 
+### HARDWARE CONNECTIONS
+1. WEBCAM/PICAM to raspberrypi
+![image](https://user-images.githubusercontent.com/44223447/161432396-7937b7c2-b791-49eb-937e-7802ad41a61e.png)
+3. PCA9685
+    GND - 6
+    OE - NO CONN
+    SCL - 5
+    SDA - 3
+    VCC - 4
+    V+ - 2
+    CH 0 - SERVO STEERING
+    CH 1 - SERVO THROTTLE/SPEED
+
+
 ### SOFTWARES
 1. Raspian Legacy (Buster) OS : https://downloads.raspberrypi.org/raspios_oldstable_lite_armhf/images/raspios_oldstable_lite_armhf-2021-12-02/2021-12-02-raspios-buster-armhf-lite.zip
 2. Etcher Image Burner: https://www.balena.io/etcher/

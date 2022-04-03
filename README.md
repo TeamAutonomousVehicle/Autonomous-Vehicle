@@ -133,6 +133,9 @@
     ```
     python manage.py drive --model ~/mycar/models/mypilot.h5
     Go to raspberrypi.local:8887
-    Select Mode & Pilot as Local Pilot(d)
+    Select Mode:
+    a. User : control of both the steering and throttle manual
+    b. Local Angle : trained model  controls the steering
+    c. Local Pilot : trained model control both the steering and the throttle
     ```
     

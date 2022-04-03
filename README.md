@@ -132,6 +132,8 @@
     then run the following:
     ```
     python manage.py drive --model ~/mycar/models/mypilot.h5
+    python manage.py drive --model ~/mycar/models/mypilot4.tflite --type tflite_linear
+
     Go to raspberrypi.local:8887
     Select Mode:
     a. User : control of both the steering and throttle manual

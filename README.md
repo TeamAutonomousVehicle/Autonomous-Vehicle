@@ -113,3 +113,4 @@
 ![image](https://user-images.githubusercontent.com/44223447/161426843-0884dee0-5d7a-470a-9b9c-d60a46ffa1ad.png)
 
     
+### Training the model

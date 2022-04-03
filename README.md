@@ -34,4 +34,30 @@
     Username: pi
     Password: raspberry
     ```
-9. 
+![image](https://user-images.githubusercontent.com/44223447/161415770-649f5abc-bbbb-48a8-b24c-1fe62f31c9d2.png)
+![image](https://user-images.githubusercontent.com/44223447/161415793-58e1c816-725f-4afc-abf2-6e27f9cc50a3.png)
+
+9. Execute these one by one
+    ```
+    sudo apt-get update --allow-releaseinfo-change
+    sudo apt-get upgrade
+    sudo raspi-config
+    ```
+    
+    enable Interfacing Options - I2C
+    enable Interfacing Options - Camera
+    select Advanced Options - Expand Filesystem so you can use your whole sd-card storage
+    Choose <Finish> and hit enter.
+
+    Reboot after changing these settings.
+    
+10. Execute these one by one
+    ```
+    sudo apt-get install build-essential python3 python3-dev python3-pip python3-virtualenv python3-numpy python3-picamera python3-pandas python3-rpi.gpio i2c-tools avahi-utils joystick libopenjp2-7-dev libtiff5-dev gfortran libatlas-base-dev libopenblas-dev libhdf5-serial-dev libgeos-dev git ntp git curl libsdl2-mixer-2.0-0 libsdl2-image-2.0-0 libsdl2-2.0-0 libilmbase-dev libopenexr-dev libgstreamer1.0-dev libjasper-dev libwebp-dev libatlas-base-dev libavcodec-dev libavformat-dev libswscale-dev libqtgui4 libqt4-test python3-opencv -y
+    
+    sudo update-alternatives --install /usr/bin/pip pip /usr/bin/pip3 1
+    sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
+    
+    pip install https://github.com/lhelontra/tensorflow-on-arm/releases/download/v2.2.0/tensorflow-2.2.0-cp37-none-linux_armv7l.whl
+    
+    ```

@@ -114,3 +114,19 @@
 
     
 ### Training the model
+    ```
+    cd ~/mycar
+    mkdir tub_01_2022_04_03 #xx_yyyy_mm_dd
+    cp -a ~/mycar/data/. ~/mycar/tub_01_2022_04_03/
+    tar -czf tub_01_2022_04_03.tar.gz tub_01_2022_04_03
+    ```
+    
+    Now copy paste the xx_yyyy_mm_dd.tar to your PC.
+    Each time for new data, delete contents of mycar/data/images and other catalog,manifest,json files in mycar/data
+    
+    Now Follow:
+    https://colab.research.google.com/drive/1Ci8lRAQrvIZ0vsg0Gr9s2yzp7CAWvcNy?usp=sharing
+    
+
+    
+    

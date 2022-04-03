@@ -127,6 +127,12 @@
     Now Follow:
     https://colab.research.google.com/drive/1Ci8lRAQrvIZ0vsg0Gr9s2yzp7CAWvcNy?usp=sharing
     
-
     
+    Download Model both h5 and tflite and put in the mycar/model directory of raspberrypi
+    then run the following:
+    ```
+    python manage.py drive --model ~/mycar/models/mypilot.h5
+    Go to raspberrypi.local:8887
+    Select Mode & Pilot as Local Pilot(d)
+    ```
     

@@ -78,33 +78,38 @@
     
     sudo apt-get install -y i2c-tools
     sudo i2cdetect -y 1
-    ![image](https://user-images.githubusercontent.com/44223447/161426378-721dc0a0-ca2e-4b0b-b8e7-2afa80722deb.png)
+    ```
+![image](https://user-images.githubusercontent.com/44223447/161426378-721dc0a0-ca2e-4b0b-b8e7-2afa80722deb.png)
 
-    
+    ```
     donkey calibrate --channel 0 --bus=1    #Steering
     donkey calibrate --channel 1 --bus=1    #Throttle
-    ![image](https://user-images.githubusercontent.com/44223447/161426432-8d4de459-f748-4d1e-ace5-4062c487a78f.png)
+    ```
+![image](https://user-images.githubusercontent.com/44223447/161426432-8d4de459-f748-4d1e-ace5-4062c487a78f.png)
 
-    
+    ```
     Uncomment this and set to WebCam
-    ![image](https://user-images.githubusercontent.com/44223447/161426580-ed4786e2-444d-426f-b6d3-cc2269dfdde7.png)
-
+    ```
+![image](https://user-images.githubusercontent.com/44223447/161426580-ed4786e2-444d-426f-b6d3-cc2269dfdde7.png)
+    ```
     Uncomment steering and throttle pwm and set as per calibration
-    ![image](https://user-images.githubusercontent.com/44223447/161426602-d8f4fbf6-0e14-46b3-a229-44f5dab6ef65.png)
-
+    ```
+![image](https://user-images.githubusercontent.com/44223447/161426602-d8f4fbf6-0e14-46b3-a229-44f5dab6ef65.png)
+    ```
     Ctl+X then Y and enter.
     
     pip install pygame
      
     python manage.py drive
-    ![image](https://user-images.githubusercontent.com/44223447/161426697-faa21afe-bb73-4cae-af56-18cc5e8e30d6.png)
-    Go to raspberrypi.local:8887 and record the data. Use web controller/joystick
-    
-    ![image](https://user-images.githubusercontent.com/44223447/161426761-c7e83fd8-bdb9-429c-b844-32abaef39358.png)
-    
-    Recorded data will be saved in /home/pi/mycar/data/
-    ![image](https://user-images.githubusercontent.com/44223447/161426843-0884dee0-5d7a-470a-9b9c-d60a46ffa1ad.png)
-    
     ```
+![image](https://user-images.githubusercontent.com/44223447/161426697-faa21afe-bb73-4cae-af56-18cc5e8e30d6.png)
+    ```
+    Go to raspberrypi.local:8887 and record the data. Use web controller/joystick
+    ```
+![image](https://user-images.githubusercontent.com/44223447/161426761-c7e83fd8-bdb9-429c-b844-32abaef39358.png)
+    ```
+    Recorded data will be saved in /home/pi/mycar/data/
+    ```
+![image](https://user-images.githubusercontent.com/44223447/161426843-0884dee0-5d7a-470a-9b9c-d60a46ffa1ad.png)
 
     
